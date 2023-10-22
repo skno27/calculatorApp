@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="cell" id="calculator">
+            <div class="cell" id="result">
+                <span class="result-text"></span>
+            </div>
+            <!-- operator buttons -->
+            <div class="row gray" id="operators">
+                <button class="btn cell" onclick="pressOperator('+')">+</button>
+                <button class="btn cell" onclick="pressOperator('-')">-</button>
+                <button class="btn cell" onclick="pressOperator('x')">x</button>
+                <button class="btn cell" onclick="pressOperator('/')">/</button>
+            </div>
+            <!-- 7-9 -->
+            <div id="lower" class="main-btns">
+                <div id="numbers">
+                    <div class="row" id="first">
+                        <button class="btn cell" onclick="pressNumber(7)">7</button>
+                        <button class="btn cell" onclick="pressNumber(8)">8</button>
+                        <button class="btn cell" onclick="pressNumber(9)">9</button>
+                    </div>
+                    <!-- 4-6 -->
+                    <div class="row" id="second">
+                        <button class="btn cell" onclick="pressNumber(4)">4</button>
+                        <button class="btn cell" onclick="pressNumber(5)">5</button>
+                        <button class="btn cell" onclick="pressNumber(6)">6</button>
+                    </div>
+                    <!-- 1-3 -->
+                    <div class="row" id="third">
+                        <button class="btn cell" onclick="pressNumber(1)">1</button>
+                        <button class="btn cell" onclick="pressNumber(2)">2</button>
+                        <button class="btn cell" onclick="pressNumber(3)">3</button>
+                    </div>
+                    <!-- 0-.-c -->
+                    <div class="row" id="last">
+                        <button class="btn cell" onclick="pressNumber(0)">0</button>
+                        <button class="btn cell" onclick="pressNumber('.')">.</button>
+                        <button class="btn cell" onclick="pressOperator('c')">clear</button>
+                    </div>
+                </div>
+                
+                <button class="equal-btn" onclick="pressOperator('=')">=</button>
+               
+                
+            </div>
+            
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
