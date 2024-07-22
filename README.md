@@ -5,4 +5,4 @@ developer a little under a year ago. Thank you for checking out my work!
 
 -------------------------------------------------------------------------------
 
-Here I build a simple calculator application. Thank you to Tim R. (TWT) for helping me master React! 
+Here I build a simple calculator application. This is part of my Course Careers software dev fundamentals coursework
